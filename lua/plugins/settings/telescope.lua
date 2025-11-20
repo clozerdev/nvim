@@ -9,10 +9,14 @@ telescope.setup({
 	},
 	extensions = {
 		fzf = {},
+		["ui-select"] = {
+			require("telescope.themes").get_dropdown {}
+		}
 	},
 })
 
 telescope.load_extension("fzf")
+telescope.load_extension("ui-select")
 
 -- Telescope keymaps
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Help tags" })
