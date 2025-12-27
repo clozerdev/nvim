@@ -52,3 +52,5 @@ vim.keymap.set("n", "gt", telescope_builtins.lsp_references, { desc = "LSP refer
 vim.keymap.set("n", "gd", telescope_builtins.lsp_definitions, { desc = "LSP definitions" })
 vim.keymap.set("n", "gi", telescope_builtins.lsp_implementations, { desc = "LSP lsp_implementations" })
 vim.keymap.set("n", "ga", vim.lsp.buf.code_action, { desc = "LSP code actions" })
+vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Goto prev diagnostic" })
+vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Goto next diagnostic" })
