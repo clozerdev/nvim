@@ -1,4 +1,3 @@
-
 return {
 	{
 		"mason-org/mason-lspconfig.nvim",
@@ -7,7 +6,7 @@ return {
 			opts = {},
 		},
 		opts = {
-			automatic_enable = false
+			automatic_enable = false,
 		},
 		config = function()
 			require("config.lsp")

@@ -1,5 +1,3 @@
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
 -- Enable LSP servers
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
@@ -39,8 +37,8 @@ cmp.setup({
 
 -- Diagnostics
 vim.diagnostic.config({
-	virtual_text = true,
 	underline = true,
+	virtual_text = true,
 	update_in_insert = false,
 })
 
